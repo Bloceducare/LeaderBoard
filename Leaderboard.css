@@ -1,0 +1,42 @@
+body {
+    background-color: #f6f6f6;
+}
+
+/* Logo Images */
+.logoImg {
+    background-size: 100%;
+    height: 88px;
+    width: 265px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: purple;
+    height: 8%;
+    width: 100%;
+}
+.uk-navbar-nav>li>a {
+    color: #999;
+    text-transform: capitalize !important;
+    transition: .1s ease-in-out;
+    transition-property: color,background-color;
+}
+.uk-navbar-nav>li>h3 {
+    color: #FA0101 !important;
+}
+
+
+
+
+
+
+
+footer {
+    position: fixed;
+    background-color: #333333;
+    bottom: 0px;
+    width: 100%;
+    padding: 5px;
+    left: 0px;
+    height: 12%;
+}
