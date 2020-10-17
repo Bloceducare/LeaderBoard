@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: Poppins;
+    font-style: normal;
+}
+.main{
+    display: block;
+    justify-content: center;
+}
+.meta{
+    width: 250px;
+    height: 293.88px;
+}
+span.field-icon {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    right: 4rem;
+    top: 27.5rem;
+    color: #2165d7;
+    z-index: 2;
+  }
+.login-btn{
+    background-color: #2165d7;
+    color: #fff;
+}
+footer{
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footer-img{
+    width: 120px;
+}
