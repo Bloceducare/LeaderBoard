@@ -4,18 +4,20 @@
         <title>LeaderBoard</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Leaderboard.css" />
-        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="../css/Leaderboard.css" />
+        <link rel="stylesheet" href="../css/uikit.min.css" />
 
-        <script src="js/uikit.min.js"></script>
-        <script src="js/uikit-icons.min.js"></script>
+        <script src="../js/uikit.min.js"></script>
+        <script src="../js/uikit-icons.min.js"></script>
+        <script src="../js/scripts.js"></script>
     </head>
     <body>
+        
         <!-- Navigation Bar Start -->
         <nav class="uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
-                    <li><h3 class="uk-margin-left uk-margin-small-top">Leaderboard</h3></li>
+                    <li><h2 class="uk-margin-left uk-margin-small-top">Leaderboard</h2></li>
                 </ul>
             </div>
             <div class="uk-navbar-right">
@@ -37,43 +39,110 @@
         </nav>
         <!-- Navigation Bar End -->
 
-        <div>
-
+        <!-- Body Start -->
+        <div class="wrapper">      
+                <div class="lboard_wrap">
+                    <div class="lboard_item month" style="display: block;">
+                        <div class="lboard_mem uk-card uk-card-default uk-card-body uk-margin-small-top user">
+                            <div class="img uk-margin-left uk-margin-small-top">
+                                <img src="../img/person1.jpg" alt="picture_2">
+                            </div>
+                            <div class="name_bar">
+                                <p class="p-font">Lindsey Regan</p>
+                                <p class="dev-status">Frontend</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="points uk-margin-right">
+                                1195 tokens
+                            </div>
+                        </div>
+                        <div class="lboard_mem uk-card uk-card-default uk-card-body uk-margin-small-top leader leaderboard-background">
+                            <div class="img uk-margin-left">
+                                <img src="../img/person1.jpg" alt="picture_2">
+                            </div>
+                            <div class="name_bar">
+                                <p class="p-font"><span>1.</span> Alex Mike</p>
+                                <p class="dev-status">Frontend</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="points uk-margin-right">
+                                1195 tokens
+                            </div>
+                        </div>
+                        <div class="lboard_mem uk-card uk-card-default uk-card-body uk-margin-small-top leaderboard-background">
+                            <div class="img uk-margin-left">
+                                <img src="../img/person1.jpg" alt="picture_3">
+                            </div>
+                            <div class="name_bar">
+                                <p class="p-font"><span>2.</span>Johnson</p>
+                                <p class="dev-status">Backend</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="points uk-margin-right">
+                                1185 tokens
+                            </div>
+                        </div>
+                        <div class="lboard_mem uk-card uk-card-default uk-card-body uk-margin-small-top leaderboard-background">
+                            <div class="img uk-margin-left">
+                                <img src="../img/person1.jpg" alt="picture_1">
+                            </div>
+                            <div class="name_bar">
+                                <p class="p-font"><span>3.</span>Charles John</p>
+                                <p class="dev-status">Backend</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="points uk-margin-right">
+                                1160 tokens
+                            </div>
+                        </div>
+                        <div class="lboard_mem uk-card uk-card-default uk-card-body uk-margin-small-top leaderboard-background">
+                            <div class="img uk-margin-left">
+                                <img src="../img/person1.jpg" alt="picture_5">
+                            </div>
+                            <div class="name_bar">
+                                <p class="p-font"><span>4.</span>Scarlett Angela</p>
+                                <p class="dev-status">Frontend</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div class="points uk-margin-right">
+                                1130 tokens
+                            </div>
+                        </div>
+                        <div class="lboard_mem uk-card uk-card-default uk-card-body uk-margin-small-top leaderboard-background">
+                            <div class="img uk-margin-left">
+                                <img src="../img/person1.jpg" alt="picture_4">
+                            </div>
+                            <div class="name_bar">
+                                <p class="p-font"><span>5.</span>Rosey</p>
+                                <p class="dev-status">Backend</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 30%"></div>
+                                </div>
+                            </div>
+                            <div class="points uk-margin-right">
+                                1110 tokens
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
+        <!-- Body End -->
 
         <!-- Footer Start -->
         <footer>
-            <img src="logo-red-on-dark-bg.png" class="logoImg uk-align-center"></img>
+           <img src="../img/logo-red-on-dark-bg.png" class="logoImg uk-align-center"></img>
         </footer>
         <!-- Footer End -->
 
     </body>
 </html>
-
-
-
-
-
-
-
-<!-- <!doctype html>
-
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-
-        <title>Leaderboard Results</title>
-        <meta name="description" content="The HTML5 Herald">
-        <meta name="author" content="SitePoint">
-
-        <link rel="stylesheet" href="Leaderboard.css">
-
-    </head>
-
-    <body>
-        Hello
-        <footer>
-            <img src="logo-red-on-white.png" class="logoImg"></img>
-        </footer>
-    </body>
-</html> -->
