@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const indexRouter = require('./routes/index');
-const models = require('./models')
+const {Account, Points} = require('./models')
 
 const app = express();
 const port = process.env.PORT || '3000';
@@ -19,10 +19,12 @@ app
    */
   .use('/', indexRouter)
 
-   models.User.sync({force: true})
-    app.listen(port, () => {
-    console.log(`Server started on port ${port}`);
+  // Account.sync({force:true})
+  // Points.sync({force:true})
 
-    });
+  app.listen(port, () => {
+    console.log(`Server started on port ${port}`);
+  })
+
 
 module.exports = app;

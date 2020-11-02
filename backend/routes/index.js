@@ -1,30 +1,22 @@
 const { request } = require('express');
 const express = require('express');
 const router = express.Router();
-const userController = require("../controllers/index")
+const {
+    addUser, 
+    getUsers, 
+    authenticateUser
+} = require("../controllers/index")
 
+const {
+    getLeaderboard
+} = require("../controllers/leaderboard")
 
-router.post("/users", (req, res, next) => {
-    const {address, firstName, lastName} = req.body
-    userController.addUser(
-        address,
-        firstName,
-        lastName
-    )
-    res.json(
-        {
-            "status":201,
-            "data": "some data"
-        }
-    )
-})
+router.post("/auth", authenticateUser)
 
-router.get("/users", (req, res, next) => {
-    const allUsers = userController.getUsers()
-    res.json({
-        "status":200,
-        "data":JSON.stringify(allUsers)
-    })
-})
+router.post("/users", addUser)
+
+router.get("/users", getUsers)
+
+router.get("/leaderboard", getLeaderboard)
 
 module.exports = router;
