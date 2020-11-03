@@ -4,7 +4,9 @@ const router = express.Router();
 const {
     addUser, 
     getUsers, 
-    authenticateUser
+    authenticateUser,
+    getNewToken,
+    activateAccount
 } = require("../controllers/index")
 
 const {
@@ -12,6 +14,10 @@ const {
 } = require("../controllers/leaderboard")
 
 router.post("/auth", authenticateUser)
+
+router.post("/auth/reset_otp", getNewToken)
+
+router.post("/auth/activate", activateAccount)
 
 router.post("/users", addUser)
 

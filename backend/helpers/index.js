@@ -47,8 +47,13 @@ const checkValidSignature = async (signature, validatorAddress) => {
     }
 }
 
+const generateOtp = () => {
+    return Math.floor((Math.random() * 89999) + 10000);
+}
+
 module.exports={
     validJWTNeeded,
     assignJwtToken,
-    checkValidSignature
+    checkValidSignature,
+    generateOtp
 }
